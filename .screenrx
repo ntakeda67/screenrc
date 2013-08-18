@@ -1,0 +1,13 @@
+attrcolor b ".I"
+term xterm
+escape ^Zz
+zombie ^[
+altscreen on
+shell /bin/zsh
+defscrollback 5000
+autodetach on
+startup_message off
+logfile "$HOME/.screen/screen-%Y%m%d-%n.log"
+caption always "%{= Rk} %?%F%{b kr}%? %?%h%:%t (screen #%n)%? %{-}"
+hardstatus alwayslastline "%{= Gk} %-Lw%40L>%{b kg} %n %t %{-}%+Lw%-040=%{b km} %l %{.b} %Y/%m/%d %C:%s %A "
+sorendition "= Rk"
